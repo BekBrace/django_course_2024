@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} Inventory App {% endblock %} </title>
+    {% comment %} https://www.jsdelivr.com/package/npm/bootstrap {% endcomment %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            padding-top: 56px;
+        }
+        .navbar{
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link{
+            color: #fff !important;
+        }
+        .container{
+            margin-top: 20px;
+        }
+        .table th, .table td{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">  <!-- Create a fixed-top navbar with Bootstrap classes -->
+        <a class="navbar-brand" href="{% url 'home' %}">Inventory App</a>  <!-- Link the brand name to the home page using Django's URL tag -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>  <!-- Button to toggle the navbar on smaller screens -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">  <!-- Collapsible navbar content -->
+            <ul class="navbar-nav">  <!-- Navbar items container -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'product_create' %}">Add Product</a>  <!-- Link to the product creation page -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'product_list' %}">Show Products</a>  <!-- Link to the product listing page -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock  %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js
+    "></script>
+</body>
+</html>

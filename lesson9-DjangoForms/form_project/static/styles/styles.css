@@ -1,0 +1,95 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin:0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+h1{
+    color: #4a90e2;
+}
+
+a{
+    text-decoration: none;
+    color: #4a90e2;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+button{
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #357ab8;
+}
+
+/* Home Page */
+.centered-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    font-size: 16px;
+    outline: none;
+}
+
+.logo{
+    width: 13%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Form Styling */
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4p 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+/* Success Page Styling */
+.success-message{
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.success-message p{
+    margin: 20px 0;
+}

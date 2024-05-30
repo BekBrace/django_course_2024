@@ -1,0 +1,13 @@
+<!-- Extend the base layout from the layout.html -->
+{% extends "invApp/layout.html" %}
+
+{% block title %} Delete Product {% endblock title %}
+
+{% block content %}
+  <h1 class="text-center">Are you sure you want to delete this product ? </h1>
+  <form  method="post" class="text-center">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Yes</button>
+    <a href="{% url 'product_list' %}" class="btn btn-secondary">Cancel</a>
+  </form>    
+{% endblock content %}

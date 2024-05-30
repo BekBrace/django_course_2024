@@ -1,0 +1,30 @@
+{% load static %}  
+<!DOCTYPE html>  
+<html>
+<head>
+    <title>Login</title> 
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">  
+</head>
+<body>
+    <div class="container"> 
+        <h2>Login</h2>  
+        <form method="post" action="{% url 'login' %}"> 
+            {% csrf_token %} 
+            <input type="hidden" name="next" value="{{ next }}"> 
+            <div class="form-group"> 
+                <label for="username">Username:</label>  
+                <input type="text" name="username" id="username" required> 
+            </div>
+            <div class="form-group"> 
+                <label for="password">Password:</label>  
+                <input type="password" name="password" id="password" required>  
+            </div>
+            <button type="submit">Login</button>  
+        </form>
+        {% if error %}  
+            <p class="error">{{ error }}</p>  
+        {% endif %}
+        <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>  
+    </div>
+</body>
+</html>
