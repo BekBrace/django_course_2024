@@ -65,8 +65,5 @@ Contributions to both the course materials and the final project are welcome. To
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
 
-## Contact
-
-For any queries regarding the course or the project, please [open an issue](https://github.com/yourusername/djangocourse/issues) on GitHub.
-
+## Thank you and happy coding :-)
 
