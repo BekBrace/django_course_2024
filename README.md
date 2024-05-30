@@ -1,4 +1,4 @@
-# Django Course Repository
+# Django Course for beginners 2024 Repository
 
 This repository contains the course materials and the final project for a Django-based course focused on web development. The course covers foundational to advanced Django topics, preparing students to build robust web applications.
 
