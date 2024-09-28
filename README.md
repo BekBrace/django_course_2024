@@ -37,7 +37,7 @@ git clone https://github.com/bekbrace/django_course_2024.git
 ```
 2. Navigate to the project directory:
 ```bash
-cd djangocourse
+cd django_course_2024
 ```
 3.  Activate the pipenv environment:
    ```bash
