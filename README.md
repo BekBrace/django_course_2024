@@ -33,7 +33,7 @@ To get this project running on your local machine, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/django_course_2024.git
+git clone https://github.com/bekbrace/django_course_2024.git
 ```
 2. Navigate to the project directory:
 ```bash
